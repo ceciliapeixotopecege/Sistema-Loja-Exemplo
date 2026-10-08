@@ -16,12 +16,12 @@ jobs:
         with:
           fetch-depth: 0
       - name: SonarQube Cloud Scan
-        # Atualizado para a v5.0.0 que resolve o problema de cache exigido pelo GitHub
+        # Atualizado para a v5.0.0 
         uses: SonarSource/sonarcloud-github-action@v5.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=Sistema-Loja-Novo
+            -Dsonar.projectKey=Sistema-Loja-Exemplo
             -Dsonar.organization=ceciliapeixotopecege
