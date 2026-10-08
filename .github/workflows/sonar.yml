@@ -24,4 +24,4 @@ jobs:
           args: >
             -Dsonar.projectKey=Sistema-Loja-Exemplo
             -Dsonar.organization=ceciliapeixotopecege
-
+            
