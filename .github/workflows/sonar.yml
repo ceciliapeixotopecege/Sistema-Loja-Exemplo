@@ -16,8 +16,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: SonarQube Cloud Scan
-        # Atualizado para a v5.0.0 
-        uses: SonarSource/sonarcloud-github-action@v5.0.0
+        # Código SHA completo e oficial da versão v5.0.0 exigido pelo SonarQube
+        uses: SonarSource/sonarcloud-github-action@e766e6c2e35a11c8a1b92ac9936ed661297380fb4d
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
