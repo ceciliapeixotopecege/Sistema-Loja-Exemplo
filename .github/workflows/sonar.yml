@@ -16,8 +16,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: SonarQube Cloud Scan
-        # Código SHA completo e oficial revisado (termina exatamente com b4d2)
-        uses: sonarsource/sonarcloud-github-action@e766e6c2e35a11c8a1b92ac9936ed661297380fb4d2
+        # Nova ferramenta oficial e unificada da SonarSource  de SHA
+        uses: SonarSource/sonarqube-scan-action@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
